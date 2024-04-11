@@ -1,0 +1,37 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.back-to-top {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-divider {
+  border-bottom: 1px solid rgb(0, 94, 255);
+}
+.years {
+  display: flex;
+  flex-direction: flex-start;
+  margin-left: 50px;
+}

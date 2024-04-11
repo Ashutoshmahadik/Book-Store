@@ -1,0 +1,177 @@
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: grid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.font {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: medium;
+  text-align: center;
+  color: rgb(73, 70, 65);
+}
+
+.card-details {
+  margin-top: 12px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup-content {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.667);
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.popup-content img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.popup-des {
+  overflow: auto;
+}
+.popup-content h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.popup-content p {
+  margin-bottom: 8px;
+}
+
+.popup-content::-webkit-scrollbar {
+  width: 5px;
+}
+.popup-content::-webkit-scrollbar-track {
+  display: none;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 68, 255, 0.728);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: rgba(0, 119, 255, 0.667);
+  border: none;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.close-button:hover {
+  background-color: rgba(80, 80, 80, 0.7);
+}
+
+.divider {
+  border-bottom: 1px solid #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .card img {
+    max-height: 150px;
+  }
+  .popup-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card img {
+    max-height: 120px;
+  }
+}
+
+.placeholder-bg {
+  display: none; /* Initially hide the placeholder */
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background-color: #ccc; /* Placeholder background color */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.description-section {
+  margin-bottom: 10px;
+}
+
+.description-title {
+  font-weight: bold;
+  color: #333; /* Example color */
+}
+
+.description-content {
+  color: #4a4a4a; /* Example color */
+  text-align: justify;
+  display: flex;
+  padding-left: 4px;
+}
+
+.text-align {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  /* align-items: center; Align items vertically */
+}
