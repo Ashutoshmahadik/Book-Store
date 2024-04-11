@@ -1,6 +1,6 @@
-## React Book Explorer
+## Book Explorer
 
-Welcome to the React Book Explorer repository! This project is a dynamic web application built with ReactJS, showcasing a curated collection of books and providing users with an immersive browsing experience.
+Welcome to the Book Explorer repository! This project is a dynamic web application built with ReactJS, showcasing a curated collection of books and providing users with an immersive browsing experience.
 
 ### Features
 
